@@ -2,18 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
-    <link rel="stylesheet" href="./css/01-gallery.css" />
-    <script type="module" src="./js/01-gallery.js"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css"
-      rel="stylesheet"
-    />
+    <title>form</title>
+    <link rel="stylesheet" href="./css/02-form.css" />
+    <script type="module" src="./js/02-form.js"></script>
   </head>
+
   <body>
     <a href="./index.html">Go back</a>
-    <ul class="gallery"></ul>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"></script>
+    <form class="feedback-form" autocomplete="off">
+      <label class="email-class">
+        Email
+        <input type="email" name="email" autofocus class="input-class" />
+      </label>
+      <label class="message-class">
+        Message
+        <textarea class="txt-class" name="message" rows="8"></textarea>
+      </label>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <script src="./js/02-form.js" defer></script>
   </body>
 </html>
